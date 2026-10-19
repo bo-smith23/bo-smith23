@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bo Smith | Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark mb-5">
+        <div class="container">
+            <a class="navbar-brand fw-bold me-5" href="index.html">Bo Smith</a>
+
+            <ul class="navbar-nav d-flex flex-row w-100">
+                <li class="nav-item dropdown me-4">
+                    <a class="nav-link dropdown-toggle" href="index.html" id="nowDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Now</a>
+                    <ul class="dropdown-menu shadow-sm" aria-labelledby="nowDropdown">
+                        <li><a class="dropdown-item" href="index.html#intro">Introduction</a></li>
+                        <li><a class="dropdown-item" href="index.html#focus">Current Focus</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown me-4">
+                    <a class="nav-link dropdown-toggle active" href="resume.html" id="resumeDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Resume</a>
+                    <ul class="dropdown-menu shadow-sm" aria-labelledby="resumeDropdown">
+                        <li><a class="dropdown-item" href="#education">Education</a></li>
+                        <li><a class="dropdown-item" href="#experience">Experience</a></li>
+                        <li><a class="dropdown-item" href="#skills">Skills</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="projects.html" id="projectsDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                    <ul class="dropdown-menu shadow-sm" aria-labelledby="projectsDropdown">
+                        <li><a class="dropdown-item" href="projects.html#opencti">OpenCTI System</a></li>
+                        <li><a class="dropdown-item" href="projects.html#password-manager">Password Manager</a></li>
+                        <li><a class="dropdown-item" href="projects.html#healthhub">HealthHub</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 class="mb-4">Resume</h1>
+
+        <h2 id="education" class="h4 mt-4 border-bottom pb-2 pt-3">Education</h2>
+        <div class="card shadow-sm border-0 mb-4 hover-card">
+            <div class="card-body">
+                <h3 class="h5 mb-2">North Carolina State University</h3>
+                <p class="text-muted mb-0"><strong>Key Coursework:</strong> Numerical Analysis, Floating-Point
+                    Arithmetic, Technical Communication</p>
+            </div>
+        </div>
+
+        <h2 id="experience" class="h4 mt-4 border-bottom pb-2 pt-3">Experience</h2>
+        <div class="card shadow-sm border-0 mb-4 hover-card">
+            <div class="card-body">
+                <h3 class="h5">Cybersecurity Professional</h3>
+                <ul class="mb-0">
+                    <li>Conduct application security testing utilizing OWASP ZAP (DAST) and SonarQube (SAST).</li>
+                    <li>Triage alerts using Microsoft Defender and Varonis, and automate security workflows with Power
+                        Automate.</li>
+                    <li>Administer biweekly phishing awareness campaigns and monthly penetration testing remediation.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 id="skills" class="h4 mt-4 border-bottom pb-2 pt-3">Skills</h2>
+        <div class="mb-4">
+            <span class="badge rounded-pill bg-secondary skill-badge">Python</span>
+            <span class="badge rounded-pill bg-secondary skill-badge">Docker & Compose</span>
+            <span class="badge rounded-pill bg-secondary skill-badge">OpenCTI</span>
+            <span class="badge rounded-pill bg-secondary skill-badge">OWASP ZAP</span>
+            <span class="badge rounded-pill bg-secondary skill-badge">SonarQube</span>
+            <span class="badge rounded-pill bg-secondary skill-badge">Power Automate</span>
+            <span class="badge rounded-pill bg-secondary skill-badge">LaTeX</span>
+        </div>
+
+        <h2 id="extracurriculars" class="h4 mt-4 border-bottom pb-2 pt-3">Extracurriculars</h2>
+        <ul class="mb-5">
+            <li>NCSU App Development Club</li>
+            <li>Theta Tau Rho Engineering Fraternity</li>
+        </ul>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

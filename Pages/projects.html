@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bo Smith | Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark mb-5">
+        <div class="container">
+            <a class="navbar-brand fw-bold me-5" href="index.html">Bo Smith</a>
+
+            <ul class="navbar-nav d-flex flex-row w-100">
+                <li class="nav-item dropdown me-4">
+                    <a class="nav-link dropdown-toggle" href="index.html" id="nowDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Now</a>
+                    <ul class="dropdown-menu shadow-sm" aria-labelledby="nowDropdown">
+                        <li><a class="dropdown-item" href="index.html#intro">Introduction</a></li>
+                        <li><a class="dropdown-item" href="index.html#focus">Current Focus</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown me-4">
+                    <a class="nav-link dropdown-toggle" href="resume.html" id="resumeDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Resume</a>
+                    <ul class="dropdown-menu shadow-sm" aria-labelledby="resumeDropdown">
+                        <li><a class="dropdown-item" href="resume.html#education">Education</a></li>
+                        <li><a class="dropdown-item" href="resume.html#experience">Experience</a></li>
+                        <li><a class="dropdown-item" href="resume.html#skills">Skills</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="projects.html" id="projectsDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                    <ul class="dropdown-menu shadow-sm" aria-labelledby="projectsDropdown">
+                        <li><a class="dropdown-item" href="#opencti">OpenCTI System</a></li>
+                        <li><a class="dropdown-item" href="#password-manager">Password Manager</a></li>
+                        <li><a class="dropdown-item" href="#healthhub">HealthHub</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 class="mb-5">Projects</h1>
+
+        <!-- Project 1: OpenCTI -->
+        <div id="opencti" class="card shadow-sm border-0 mb-5 hover-card pt-3">
+            <div class="row g-0">
+                <div class="col-md-5">
+                    <!-- Project Screenshot Placeholder -->
+                    <img src="https://via.placeholder.com/600x400"
+                        class="img-fluid rounded-start project-img w-100 h-100" alt="OpenCTI Dashboard">
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body d-flex flex-column h-100 p-4">
+                        <h2 class="h3 card-title text-primary">OpenCTI Threat Intelligence System</h2>
+                        <div class="mb-3">
+                            <span class="badge bg-light text-dark border">Python</span>
+                            <span class="badge bg-light text-dark border">Docker Compose</span>
+                            <span class="badge bg-light text-dark border">STIX 2.1</span>
+                        </div>
+                        <p class="card-text text-muted flex-grow-1">Deployed an OpenCTI platform utilizing Docker
+                            Compose to centralize threat feeds. Developed custom Python middleware and STIX 2.1 asset
+                            relationships to automate notifications across runZero, CrowdStrike, and Palo Alto Networks.
+                        </p>
+                        <div>
+                            <a href="#" class="btn btn-primary">View Architecture</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2: Password Manager -->
+        <div id="password-manager" class="card shadow-sm border-0 mb-5 hover-card pt-3">
+            <div class="row g-0">
+                <div class="col-md-5">
+                    <!-- Project Screenshot Placeholder -->
+                    <img src="https://via.placeholder.com/600x400"
+                        class="img-fluid rounded-start project-img w-100 h-100" alt="Password Manager Flowchart">
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body d-flex flex-column h-100 p-4">
+                        <h2 class="h3 card-title text-primary">Zero-Knowledge Password Manager</h2>
+                        <div class="mb-3">
+                            <span class="badge bg-light text-dark border">Cryptography</span>
+                            <span class="badge bg-light text-dark border">Database Design</span>
+                        </div>
+                        <p class="card-text text-muted flex-grow-1">Designed the architectural flow for a password
+                            manager utilizing client-side decryption, ensuring secrets stored in the database remain
+                            encrypted and inaccessible to the server.</p>
+                        <div>
+                            <a href="#" class="btn btn-primary">View Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3: HealthHub -->
+        <div id="healthhub" class="card shadow-sm border-0 mb-5 hover-card pt-3">
+            <div class="row g-0">
+                <div class="col-md-5">
+                    <!-- Project Screenshot Placeholder -->
+                    <img src="https://via.placeholder.com/600x400"
+                        class="img-fluid rounded-start project-img w-100 h-100" alt="HealthHub Application">
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body d-flex flex-column h-100 p-4">
+                        <h2 class="h3 card-title text-primary">HealthHub</h2>
+                        <div class="mb-3">
+                            <span class="badge bg-light text-dark border">App Development</span>
+                            <span class="badge bg-light text-dark border">Team Collaboration</span>
+                        </div>
+                        <p class="card-text text-muted flex-grow-1">Collaborative software repository focused on
+                            application development, built alongside the NCSU App Development Club. Focused on secure
+                            data handling and responsive user interfaces.</p>
+                        <div>
+                            <a href="#" class="btn btn-primary">View Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

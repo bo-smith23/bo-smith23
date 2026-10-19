@@ -1,0 +1,45 @@
+/* style.css */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Force dropdowns to appear on hover for desktop */
+@media all and (min-width: 768px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+        margin-top: 0;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+        color: #fff;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+/* Card hover effect */
+.hover-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.hover-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+/* Custom styling for the skills badges */
+.skill-badge {
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-right: 5px;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+}
+
+/* Project Image Utilities */
+.project-img {
+    min-height: 250px;
+    object-fit: cover;
+}
