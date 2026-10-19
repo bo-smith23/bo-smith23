@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bo Smith | Projects</title>
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; connect-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; script-src 'self' https://cdn.jsdelivr.net; img-src 'self' data:;">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -101,22 +103,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script>
-        fetch('components/nav-bar.html')
-            .then(response => response.text())
-            .then(data => {
-                // Inject the HTML
-                document.getElementById('nav-placeholder').innerHTML = data;
 
-                // Automatically add the 'active' class to the correct link based on the URL
-                let currentUrl = window.location.pathname.split('/').pop() || 'index.html';
-                document.querySelectorAll('#nav-links .nav-link').forEach(link => {
-                    if (link.getAttribute('href') === currentUrl) {
-                        link.classList.add('active');
-                    }
-                });
-            });
-    </script>
+    <script src="components/nav-bar.js"
+        integrity="sha384-YlW19Vl3GNNm5I05+LI8PpikGAQ8kFBlibveEa+ptxB4jbgH6uLZhcq8aa4slsOv"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
