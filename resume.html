@@ -10,38 +10,48 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand navbar-dark bg-dark mb-5">
-        <div class="container">
+    <!-- Mega Menu Navbar -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark mb-5 mega-nav-wrapper shadow-sm">
+        <div class="container position-relative py-2">
             <a class="navbar-brand fw-bold me-5" href="index.html">Bo Smith</a>
 
+            <!-- Top Level Parallel Links -->
             <ul class="navbar-nav d-flex flex-row w-100">
-                <li class="nav-item dropdown me-4">
-                    <a class="nav-link dropdown-toggle" href="index.html" id="nowDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">Now</a>
-                    <ul class="dropdown-menu shadow-sm" aria-labelledby="nowDropdown">
-                        <li><a class="dropdown-item" href="index.html#intro">Introduction</a></li>
-                        <li><a class="dropdown-item" href="index.html#focus">Current Focus</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown me-4">
-                    <a class="nav-link dropdown-toggle active" href="resume.html" id="resumeDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">Resume</a>
-                    <ul class="dropdown-menu shadow-sm" aria-labelledby="resumeDropdown">
-                        <li><a class="dropdown-item" href="#education">Education</a></li>
-                        <li><a class="dropdown-item" href="#experience">Experience</a></li>
-                        <li><a class="dropdown-item" href="#skills">Skills</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="projects.html" id="projectsDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
-                    <ul class="dropdown-menu shadow-sm" aria-labelledby="projectsDropdown">
-                        <li><a class="dropdown-item" href="projects.html#opencti">OpenCTI System</a></li>
-                        <li><a class="dropdown-item" href="projects.html#password-manager">Password Manager</a></li>
-                        <li><a class="dropdown-item" href="projects.html#healthhub">HealthHub</a></li>
-                    </ul>
-                </li>
+                <li class="nav-item me-4"><a class="nav-link active" href="index.html">Now</a></li>
+                <li class="nav-item me-4"><a class="nav-link" href="resume.html">Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
             </ul>
+        </div>
+
+        <!-- The Expanding Dropdown Panel -->
+        <div class="mega-menu-panel shadow-lg">
+            <div class="container">
+                <div class="row">
+                    <!-- Now Links -->
+                    <div class="col-md-4">
+                        <div class="column-title">Now</div>
+                        <a href="index.html#intro">Introduction</a>
+                        <a href="index.html#focus">Current Focus</a>
+                    </div>
+
+                    <!-- Resume Links -->
+                    <div class="col-md-4">
+                        <div class="column-title">Resume</div>
+                        <a href="resume.html#education">Education</a>
+                        <a href="resume.html#experience">Experience</a>
+                        <a href="resume.html#skills">Skills</a>
+                        <a href="resume.html#extracurriculars">Extracurriculars</a>
+                    </div>
+
+                    <!-- Projects Links -->
+                    <div class="col-md-4">
+                        <div class="column-title">Projects</div>
+                        <a href="projects.html#opencti">OpenCTI System</a>
+                        <a href="projects.html#password-manager">Password Manager</a>
+                        <a href="projects.html#healthhub">HealthHub</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 

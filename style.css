@@ -1,0 +1,83 @@
+/* style.css */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Card hover effect */
+.hover-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.hover-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+/* Custom styling for the skills badges */
+.skill-badge {
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-right: 5px;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+}
+
+/* Project Image Utilities */
+.project-img {
+    min-height: 250px;
+    object-fit: cover;
+}
+
+/* --- Mega Menu Navbar Styles --- */
+.mega-nav-wrapper {
+    position: relative;
+    background-color: #212529;
+    /* Matches Bootstrap bg-dark */
+}
+
+.mega-menu-panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #212529;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+    border-top: 1px solid #343a40;
+}
+
+/* Triggers the expansion when hovering anywhere on the navbar */
+.mega-nav-wrapper:hover .mega-menu-panel {
+    max-height: 400px;
+    /* Arbitrary large number to allow content to fit */
+    opacity: 1;
+    visibility: visible;
+    padding-bottom: 30px;
+}
+
+.mega-menu-panel .column-title {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #495057;
+    padding-bottom: 5px;
+}
+
+.mega-menu-panel a {
+    color: #adb5bd;
+    text-decoration: none;
+    display: block;
+    padding: 6px 0;
+    transition: color 0.2s;
+    font-size: 0.95rem;
+}
+
+.mega-menu-panel a:hover {
+    color: #fff;
+}
